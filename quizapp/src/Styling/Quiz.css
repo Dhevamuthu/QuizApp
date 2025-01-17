@@ -1,0 +1,100 @@
+.quiz-container {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+
+
+.timer {
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: orange;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  align-self: flex-end;
+}
+
+.question-box {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%; /* Adjust the width as needed */
+  max-width: 1400px;
+  height: 70%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.question {
+  font-size: 24px;
+  margin-bottom: 10%;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.options {
+
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px;
+}
+
+.option-box {
+  border: 2px solid #ddd;
+  height: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  flex: 1;
+  padding: 80px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #e0e0e0; /* Default color */
+}
+
+.option-box.selected {
+  background-color: #f4a261; /* Orange shade for selected option */
+  color: #fff;
+  border: 2px solid #e76f51; /* Darker orange for border */
+  transform: scale(1.05);
+}
+
+.option-box.opt1 {
+  background-color: #56f0ee;
+}
+
+.option-box.opt2 {
+  background-color: #ebb41a;
+}
+
+.option-box.opt3 {
+  background-color: #2152e6;
+}
+
+.option-box.opt4 {
+  background-color: #d850dd;
+}
+
+.submit-button {
+  background-color: #f0f0f0; /* Very light gray */
+  color: #999; /* Gray text */
+  margin-top: 2%;
+  border: 1px solid #ccc; /* Light border to define the button */
+  cursor: not-allowed; /* Indicates that it can't be clicked initially */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.submit-button:hover {
+  background-color: #d850dd; /* Light pinkish shade */
+  color: #fff; /* White text */
+  border-color: #d850dd; /* Match the border color to the hover background */
+  cursor: pointer; /* Changes cursor to indicate it's clickable */
+}
